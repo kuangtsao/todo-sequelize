@@ -85,3 +85,7 @@ npx sequelize db:seed:all
 npx sequelize db:seed:undo:all
 ```
 query 資料庫檢證
+
+9. 做首頁
+主要看 `app.js` 的 `app.get('/')` 這個路由 query 作法
+sequalize 的對 query 的 finder [建議](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/)
