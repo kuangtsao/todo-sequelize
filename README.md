@@ -95,3 +95,6 @@ sequalize 的對 query 的 finder [建議](https://sequelize.org/docs/v6/core-co
 查詢單筆資料：在 res.render 時在物件實例 todo 後串上 todo.toJSON()
 
 另外的一個重點是 findByPk()，利用 Primary Key query
+
+11. 完善版註冊功能
+最主要是 findOne() 和 where 的用法
