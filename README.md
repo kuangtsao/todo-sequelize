@@ -93,3 +93,5 @@ sequalize 的對 query 的 finder [建議](https://sequelize.org/docs/v6/core-co
 10. 做 detail
 查詢多筆資料：要在 findAll({ raw: true, nest: true}) 直接傳入參數
 查詢單筆資料：在 res.render 時在物件實例 todo 後串上 todo.toJSON()
+
+另外的一個重點是 findByPk()，利用 Primary Key query
