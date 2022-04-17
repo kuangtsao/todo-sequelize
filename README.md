@@ -53,3 +53,25 @@ $ npx sequalize db:migration
 ```
 
 `User` 也照同一個步驟做，就可以 query 了。
+
+7. 新增欄位與建立關聯
+`Users.id` 對 `Todo.UserId` 是一對多
+
+新增 migration
+```
+npx sequelize migration:generate --name add-userId-to-todo
+```
+
+程式碼可以看 `migrations/20220417112442-add-userId-to-todo.js`
+
+接著
+```
+npx sequelize db:migrate
+```
+就會多一個欄位
+
+
+建立關聯可以看 models/user.js 和 models/todo.js
+
+註測功能看 app.js
+
