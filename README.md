@@ -75,3 +75,13 @@ npx sequelize db:migrate
 
 註測功能看 app.js
 
+8. 種子資料
+打種子資料進去
+```
+npx sequelize db:seed:all
+```
+刪除種子資料
+```
+npx sequelize db:seed:undo:all
+```
+query 資料庫檢證
